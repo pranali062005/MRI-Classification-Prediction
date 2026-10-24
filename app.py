@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Load the trained model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "MRIc.pkl")
 
 @st.cache_resource
 def load_model():
