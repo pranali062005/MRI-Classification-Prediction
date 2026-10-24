@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Load the trained model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "MRIc.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "MRI Classification.pkl")
 
 @st.cache_resource
 def load_model():
@@ -26,7 +26,7 @@ st.title("Material Predictor")
 st.write("Enter material parameters to calculate output classification.")
 
 if model is None:
-    st.error("Model file (`MRIc.pkl`) not found on server.")
+    st.error("Model file (`MRI Classification.pkl`) not found on server.")
 else:
     # Input Form
     with st.form("prediction_form"):
