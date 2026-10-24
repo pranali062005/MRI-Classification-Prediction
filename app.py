@@ -6,7 +6,7 @@ from flask import Flask, render_template_string, request, jsonify
 app = Flask(__name__)
 
 # Load the trained model
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "MRIc.pkl")
 
 model = None
 if os.path.exists(MODEL_PATH):
