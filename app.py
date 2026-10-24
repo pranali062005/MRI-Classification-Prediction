@@ -26,7 +26,7 @@ st.title("Material Predictor")
 st.write("Enter material parameters to calculate output classification.")
 
 if model is None:
-    st.error("Model file (`model.pkl`) not found on server.")
+    st.error("Model file (`MRIc.pkl`) not found on server.")
 else:
     # Input Form
     with st.form("prediction_form"):
